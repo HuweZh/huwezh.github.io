@@ -10,6 +10,7 @@ export default {
     const markdown = "";
     const url = "./md/demo.md";
     axios.get(url).then((response) => {
+      console.log(response);
       this.markdown = response.data;
     });
     return {
