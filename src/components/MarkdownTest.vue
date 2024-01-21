@@ -3,10 +3,17 @@
 </template>
 
 <script>
+// import demo from "../assets/demo.md"
+import axios from "axios"
 export default {
   data() {
+    const markdown = "";
+    const url = "./md/demo.md";
+    axios.get(url).then((response) => {
+      this.markdown = response.data;
+    });
     return {
-      markdown: '### 标题',
+      markdown: markdown,
     };
   },
 };
