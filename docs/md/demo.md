@@ -1,3 +1,3 @@
 # ceshi 
 ## cece 
-![123](./logo.png)
+![123](./doc/md/logo.png)
